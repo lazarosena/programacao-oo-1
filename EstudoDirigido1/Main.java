@@ -1,7 +1,21 @@
 import java.util.Scanner;
 
+/**
+ * Classe principal que executa o jogo de adivinhação de números.
+ * 
+ * Funcionalidades:
+ * - Solicita o nome do jogador.
+ * - Executa o jogo até o jogador acertar.
+ * - Exibe o placar e atualiza o ranking.
+ * - Permite jogar novamente, ver ranking ou sair.
+ */
 public class Main 
 {
+    /**
+     * Método principal que inicia a execução do programa.
+     *
+     * @param args Argumentos da linha de comando (não utilizados).
+     */
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -62,6 +76,6 @@ public class Main
         }
 
     }
-        //scanner.close() 
+        //scanner.close() // scanner.close(); // Evitado para não fechar System.in prematuramente
     }
 }
