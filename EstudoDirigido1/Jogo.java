@@ -16,7 +16,8 @@ public class Jogo
         jogador.incrementarTentativas();
         if(tentativa == numeroSecreto)
         {
-            jogador.atualizarPontuacao(1000);
+            int pontos = Math.max(0, 1000 - (jogador.getTentativas() - 1) * 10);
+            jogador.atualizarPontuacao(pontos);
             return "Acertou!";
         } else if (tentativa < numeroSecreto)
         {
