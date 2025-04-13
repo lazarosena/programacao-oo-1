@@ -11,7 +11,7 @@ public class Placar
     }
 
     //adiciona no ranking
-    public void adicionaJogadorRanking(jogador j)
+    public void adicionaJogadorRanking(Jogador j)
     {
         this.ranking.add(j);
     }
@@ -19,19 +19,20 @@ public class Placar
     public void mostraRankingTela()
     {
         System.out.println("\n===== RANKING DE JOGADORES =====");
-        for (jogador j : ranking)
+        for (Jogador j : ranking)
         {
             System.out.println("Jogador: " + j.getNome() + "| Pontuaçao: " + j.getPontuacao());
         }
         System.out.println("================================");
     }
 
-
-    public void exibirPlacarFinal(Jogador Jogador)
+    
+    public void exibirPlacarFinal(Jogador jogador)
+    {
     System.out.println("======PLACAR FINAL======");
     System.out.println("Jogador: " + jogador.getNome());
     System.out.println("Tentativas: " + jogador.getTentativas());
     System.out.println("Pontuação: " + jogador.getPontuacao());
     System.out.println("========================");
-
+    }
 }
