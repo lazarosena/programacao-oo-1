@@ -2,6 +2,6 @@
 
 Análise e Desenvolvimento de Sistemas
 
-Vinicius Chruczeski
+Lazaro Sena 
 
 👍 
